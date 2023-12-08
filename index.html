@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>breakio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <head>
+  <body>
+
+
+
+
+
+ <!--navbar start-->
+<section>
+    <nav class="bg-white border-gray-200 text-white dark:border-gray-600 dark:bg-gray-900 fixed w-full z-10">
+    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <p class="self-center text-[32px] font-[700] text-gray-900 whitespace-nowrap dark:text-white">break<span class="font-bold text-[#86198F]">io</span></p>
+        </a>
+        <button data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu-full" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div id="mega-menu-full" class="items-center justify-between font-medium hidden w-full md:flex md:w-auto absolute top-[48px] left-0 w-full flex flex-col gap-6 py-2 text-lg font-bold md:static md:flex-row md:justify-between">
+            <ul class="flex flex-col text-white p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-white md:w-full w-[92%] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                    <a href="index.html" data-tooltip-target="tooltip-bottom" data-tooltip-placement="bottom" type="button" class="block py-2 px-3 text-[16px] text-gray-900 hover:text-[#C026D3] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Explore</a>
+                <li>
+                   <a href="index.html" data-tooltip-target="tooltip-bottom" data-tooltip-placement="bottom" type="button" class="block py-2 px-3 text-[16px] text-gray-900 hover:text-[#C026D3] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Solutions</a>
+                </li>
+                <li>
+                    <a href="index.html" data-tooltip-target="tooltip-bottom" data-tooltip-placement="bottom" type="button" class="block py-2 px-3 text-[16px] text-gray-900 hover:text-[#C026D3] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                </li>
+                <li>
+                    <a href="index.html" data-tooltip-target="tooltip-bottom" data-tooltip-placement="bottom" type="button" class="block py-2 px-3 text-[16px] text-gray-900 hover:text-[#C026D3] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+                </li>
+                <li>
+                    <a href="index.html" data-tooltip-target="tooltip-bottom" data-tooltip-placement="bottom" type="button" class="block py-2 px-3 text-[16px] text-gray-900 hover:text-[#C026D3] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Log In</a>
+                </li>
+        <button type="button" class="text-white bg-[#86198F] hover:bg-[#C026D3] nav2 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Start Now</button>
+            </ul>
+        </div>
+    </div>
+ </nav>
+</section>
+ <!--navbar end-->
+
+
+
+
+
+
+ <!--hero section start-->
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto max-w-screen-xl flex flex-col px-5 py-24 justify-center items-center">
+    <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+      <h1 class="title-font sm:text-[62px] text-[32px] mb-4 mt-16 sm:font-[800] font-[700] text-[#C026D3] w-full">It’s time to<span class="text-[#701A75]"> take a break</span></h1>
+      <p class="mb-8 sm:text-[20px] text-[16px] leading-relaxed">Build your meditation skills with an app that gives you all you need!</p>
+      <div class="flex w-full justify-center items-end">
+        <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
+          <input type="text" id="hero-field" name="hero-field" placeholder="Enter your name" class="w-full bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-indigo-200 focus:bg-transparent border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <button class="inline-flex rounded-2xl text-white bg-[#86198F] border-0 py-2 px-6 focus:outline-none hover:bg-[#C026D3] nav2 rounded text-lg">Start <span class="hidden md:block">Now</span></button>
+      </div>
+      </div>
+      <div class="flex items-center justify-center">
+    <img class="sm:w-full w-4/5" src="images/img.jpg" alt="">
+</div>
+    </div>
+  </div>
+</section>
+ <!--hero section end-->
+
+
+
+
+
+<!--"Get better everyday" start-->
+<section class="text-gray-600 body-font">
+  <div class="container px-5 max-w-screen-xl mx-auto">
+    <div class="text-center mb-20">
+      <h1 class="sm:text-[56px] text-[24px] sm:font-[800] font-[700] text-center title-font text-[#C026D3] mb-4">Get bett<span class="text-[#701A75]">er everyday</span></h1>
+      <p class="text-base sm:text-[20px] text-[16px] leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600">Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum sollicitudin.</p>
+    <button class="flex mx-auto mt-8 text-white bg-[#86198F] border-0 py-2 px-8 focus:outline-none hover:bg-[#C026D3] nav2 rounded-2xl text-lg">Start Now</button>
+  </div>
+    <div class="flex items-center justify-center">
+    <img class="sm:w-4/5" src="images/img1.jpg" alt="">
+</div>
+    </div>
+</section>
+<!--"Get better everyday" end-->
+
+
+
+
+
+<!--"Stories from our users" start-->
+<section class="text-gray-600 body-font">
+  <div class="container px-5 max-w-screen-xl mt-24 mx-auto">
+    <div class="text-center mb-20">
+      <h1 class="sm:text-[56px] text-[24px] sm:font-[800] font-[700] text-center title-font text-[#C026D3] mb-4">Stories fro<span class="text-[#701A75]">m our users</span></h1>
+      <p class="text-base sm:text-[20px] text-[16px] leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600">Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum sollicitudin.</p>
+  </div>
+  <div class="flex flex-wrap -m-4">
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full nav1 bg-white">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="images/img2.jpg">
+        </a>
+        <div class="mt-4">
+          <div class="flex items-center gap-4">
+    <img class="w-10 h-10 rounded-full" src="images/img6.jpg" alt="">
+    <div class="font-medium dark:text-white">
+        <div>Flower Decorations</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400">by Melvina Spring</div>
+    </div>
+</div>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full nav1 bg-white">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="images/img3.jpg">
+        </a>
+        <div class="mt-4">
+          <div class="flex items-center gap-4">
+    <img class="w-10 h-10 rounded-full" src="images/img7.jpg" alt="">
+    <div class="font-medium dark:text-white">
+        <div>Flower Decorations</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400">by Melvina Spring</div>
+    </div>
+</div>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full nav1 bg-white">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="images/img4.jpg">
+        </a>
+        <div class="mt-4">
+          <div class="flex items-center gap-4">
+    <img class="w-10 h-10 rounded-full" src="images/img8.jpg" alt="">
+    <div class="font-medium dark:text-white">
+        <div>Splash</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400">by Rwanda Melflor</div>
+    </div>
+</div>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full nav1 bg-white">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="images/img5.jpg">
+        </a>
+        <div class="mt-4">
+          <div class="flex items-center gap-4">
+    <img class="w-10 h-10 rounded-full" src="images/img9.jpg" alt="">
+    <div class="font-medium dark:text-white">
+        <div>Colorful Face</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400">by Melvina Spring</div>
+    </div>
+</div>
+        </div>
+      </div>
+    </div>
+</section>
+<!--"Stories from our users" end-->
+
+
+
+
+
+
+<!--"What other users say" start-->
+<section class="bg-[#FDF4FF] mt-16 text-gray-600 body-font">
+  <div class="container px-5 py-24 max-w-screen-xl mx-auto bg-center bg-no-repeat rounded-md" style="background-image: url('images/img03.jpg')">
+     <h1 class="sm:text-[56px] text-[24px] sm:font-[800] font-[700] text-center title-font text-[#C026D3] mb-16">What other us<span class="text-[#701A75]">ers say</span></h1>
+    <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center rounded bg-white">
+      <h1 class="inline-block text-black sm:text-[32px] text-[24px] font-[700] mt-12 mb-8">Placerat feugiat senectus</h1>
+      <p class="leading-relaxed sm:text-[20px] text-[16px] text-lg mb-8 text-black">Ultricies pharetra arcu turpis dui massa interdum lorem. Viverra nunc quisque congue tincidunt potenti. Tellus, enim vel habitasse commodo ultrices aenean ultricies.</p>
+      <img class="w-50 h-50 rounded-full mb-4 inline-block" src="images/img6.jpg" alt="">
+      <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Jane Doe</h2>
+      <p class="text-gray-500 mb-8">Senior Designer</p>
+    </div>
+  </div>
+</section>
+<!--"What other users say" start-->
+
+
+
+
+
+
+<!--"Your favourite tools" start-->
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto  max-w-screen-xl">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-[56px] text-[24px] sm:font-[800] font-[700] title-font mb-4 text-[#C026D3]">Your favou<span class="text-[#701A75]">rite tools</span></h1>
+      <p class="lg:w-2/3 sm:text-[20px] text-[16px] mx-auto leading-relaxed text-base">In risus nec molestie at in pulvinar tellus. At integer id condimentum gravida nisi nisl. Sem vitae porttitor arcu congue sem erat et sit faucibus. Sollicitudin elit gravida tellus mattis porttitor.</p>
+    </div>
+    <div class="flex flex-wrap -m-2">
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center p-4 rounded-lg">
+          <div class="flex-grow">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover mr-4" src="images/img10.jpg">
+            <h2 class="text-gray-900 title-font text-[24px] font-[700] mb-4">Sapien amet est</h2>
+            <p class="text-gray-500">Viverra netus odio nunc ac nibh lorem iaculis. Orci facilisis habitasse cursus tempor et.</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center  p-4 rounded-lg">
+          <div class="flex-grow">
+           <img alt="team" class="w-16 h-16 bg-gray-100 object-cover mr-4" src="images/map-2.jpg">
+            <h2 class="text-gray-900 title-font text-[24px] font-[700] mb-4">Tortor ornare</h2>
+            <p class="text-gray-500">Nulla etiam mattis amet suspendisse lacus nulla sed urna ultricies. </p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center p-4 rounded-lg">
+          <div class="flex-grow">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover mr-4" src="images/manual-gearbox.jpg">
+            <h2 class="text-gray-900 title-font text-[24px] font-[700] mb-4">Vel lacus</h2>
+            <p class="text-gray-500">Porttitor quis lectus varius quis dolor morbi massa pellentesque.</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center p-4 rounded-lg">
+          <div class="flex-grow">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover mr-4" src="images/Icon (1).jpg">
+            <h2 class="text-gray-900 title-font text-[24px] font-[700] mb-4">Hendrerit blandit</h2>
+            <p class="text-gray-500">A aliquam pharetra in nec vitae ultrices commodo placerat eget.</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center p-4 rounded-lg">
+          <div class="flex-grow">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover mr-4" src="images/Icon (2).jpg">
+            <h2 class="text-gray-900 title-font text-[24px] font-[700] mb-4">Hendrerit blandit</h2>
+            <p class="text-gray-500">A aliquam pharetra in nec vitae ultrices commodo placerat eget.</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center p-4 rounded-lg">
+          <div class="flex-grow">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover mr-4" src="images/markdown.jpg">
+            <h2 class="text-gray-900 title-font text-[24px] font-[700] mb-4">Hendrerit blandit</h2>
+            <p class="text-gray-500">A aliquam pharetra in nec vitae ultrices commodo placerat eget.</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center p-4 rounded-lg">
+          <div class="flex-grow">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover mr-4" src="images/pig.jpg">
+            <h2 class="text-gray-900 title-font text-[24px] font-[700] mb-4">Sed aliquam lectus</h2>
+            <p class="text-gray-500">Rhoncus ut montes quis eget vulputate. Id hac consectetur ornare neque.</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center p-4 rounded-lg">
+          <div class="flex-grow">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover mr-4" src="images/Icon.jpg">
+            <h2 class="text-gray-900 title-font text-[24px] font-[700] mb-4">Cursus diam</h2>
+            <p class="text-gray-500">Feugiat consectetur eu commodo odio venenatis pretium libero. Volutpat ultricies nisl turpis id.</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center p-4 rounded-lg">
+          <div class="flex-grow">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover mr-4" src="images/Icon (3).jpg">
+            <h2 class="text-gray-900 title-font text-[24px] font-[700] mb-4">Facilisi vel malesuada</h2>
+            <p class="text-gray-500">Nibh cursus ultricies id neque proin urna vivamus bibendum. Quam sit platea integer sit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--"Your favourite tools" end-->
+
+
+
+
+
+
+<!--"Frequently asked questions" start-->
+<section class="py-10 bg-[#f1f5f9] sm:py-16 lg:py-24">
+    <div class="max-w-screen-xl m-2 mx-auto px-5 min-h-sceen text-white w-full">
+       <h1 class="sm:text-[56px] text-[24px] sm:font-[800] font-[700] text-center title-font text-[#C026D3] mb-4">Frequently ask<span class="text-[#701A75]">ed questions</span></h1>
+      <p class="text-base sm:text-[20px] text-[16px] text-center leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600">Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum sollicitudin.</p>
+  <div class="grid divide-y m-2 divide-neutral-200  mx-auto mt-8">
+    <div class="sm:py-8 py-4 px-3 m-2 bg-white">
+      <details class="group">
+        <summary class="flex justify-between items-center font-medium cursor-pointer list-none sm:text-xl text-sm">
+          <span class="text-black">Enim sodales consequat adipiscing facilisis massa venenatis, non lorem lobortis?</span>
+          <span class="transition group-open:rotate-180">
+                <svg class="text-[#C026D3]" fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+              </span>
+        </summary>
+        <p class="sm:text-xl text-sm text-black mt-6 text-black group-open:animate-fadeIn">
+           Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí".
+        </p>
+      </details>
+    </div>
+    <div class="sm:py-8 py-4 px-3 m-2 bg-white">
+      <details class="group">
+        <summary class="flex justify-between items-center font-medium cursor-pointer list-none sm:text-xl text-sm">
+          <span class="text-black">Venenatis nulla sagittis nunc, lobortis nec sollicitudin neque, dolor?</span>
+          <span class="transition group-open:rotate-180">
+                <svg class="text-[#C026D3]" fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+              </span>
+        </summary>
+        <p class="sm:text-xl text-sm text-black mt-6 text-black group-open:animate-fadeIn">
+           Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí".
+        </p>
+      </details>
+    </div>
+    <div class="sm:py-8 py-4 px-3 m-2 bg-white">
+      <details class="group">
+        <summary class="flex justify-between items-center font-medium cursor-pointer list-none sm:text-xl text-sm">
+          <span class="text-black">Varius ultricies molestie tellus fermentum, viverra ipsum scelerisque etiam lorem?</span>
+          <span class="transition group-open:rotate-180">
+                <svg class="text-[#C026D3]" fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+              </span>
+        </summary>
+        <p class="sm:text-xl text-sm text-black mt-6 text-black group-open:animate-fadeIn">
+           Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí".
+        </p>
+      </details>
+    </div>
+    <div class="sm:py-8 py-4 px-3 m-2 bg-white">
+      <details class="group">
+        <summary class="flex justify-between items-center font-medium cursor-pointer list-none sm:text-xl text-sm">
+          <span class="text-black">Nulla etiam vitae, at sagittis, nibh ultrices mattis feugiat faucibus?</span>
+          <span class="transition group-open:rotate-180">
+                <svg class="text-[#C026D3]" fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+              </span>
+        </summary>
+        <p class="sm:text-xl text-sm text-black mt-6 text-black group-open:animate-fadeIn">
+           Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí".
+        </p>
+      </details>
+    </div>
+   <div class="sm:py-8 py-4 px-3 m-2 bg-white">
+      <details class="group">
+        <summary class="flex justify-between items-center font-medium cursor-pointer list-none sm:text-xl text-sm">
+          <span class="text-black">Sagittis consectetur gravida nec turpis eros, id sit et, dictum?</span>
+          <span class="transition group-open:rotate-180">
+                <svg class="text-[#C026D3]" fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+              </span>
+        </summary>
+        <p class="sm:text-xl text-sm text-black mt-6 text-black group-open:animate-fadeIn">
+           Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí".
+        </p>
+      </details>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!--"Frequently asked questions" end-->
+
+
+
+
+
+
+<!--"Footer" start-->
+<footer class="bg-white dark:bg-gray-900">
+    <div class="mx-auto w-full max-w-screen-xl">
+      <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-6">
+        <div>
+            <h2 class="mb-6 text-sm font-bold text-gray-900 uppercase dark:text-white">Categories</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                    <a href="#" class=" hover:underline">User Interface</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">User Experience</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Digital Media</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Lifestyle</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Programming</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Animation</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-bold text-gray-900 uppercase dark:text-white">Product</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Pricing</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Overview</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Browse</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Accessibility</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Five</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Changelog</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-bold text-gray-900 uppercase dark:text-white">Solutions</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Brainstorming</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Ideation</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Wireframing</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Research</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Design</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Concept</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-bold text-gray-900 uppercase dark:text-white">Resources</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Help Center</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Blog</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Tutorials</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">FAQs</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Community</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Events</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-bold text-gray-900 uppercase dark:text-white">Support</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Contact Us</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Developers</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Documentation</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Integrations</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Reports</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Webinar</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-bold text-gray-900 uppercase dark:text-white">Company</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">About</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Press</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Events</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Careers</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Customers</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Partners</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="px-4 py-6 bg-white dark:bg-white md:flex md:items-center md:justify-between">
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <p class="self-center text-3xl font-bold text-gray-900 whitespace-nowrap dark:text-white">break<span class="font-bold text-[#86198F]">io</span></p>
+        <span class="text-sm cursor-default text-gray-500 dark:text-gray-300 sm:text-center">@ 2023 - All rights reserved
+        </span>
+        </a>
+        <div class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+            <a href="#" class="text-gray-900 dark:hover:text-white">
+              <a href="#" class="text-gray-900 dark:hover:text-white hover:text-gray-400">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                        <i class="fa-brands fa-youtube"></i>
+                    </svg>
+              </a>
+              <a href="#" class="text-gray-900 dark:hover:text-white hover:text-gray-400">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                       <i class="fa-brands fa-facebook-f"></i>
+                    </svg>
+              </a>
+              
+              <a href="#" class="text-gray-900 dark:hover:text-white hover:text-gray-400">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                   <i class="fa-brands fa-twitter"></i>
+                </svg>
+              </a>
+              <a href="#" class="text-gray-900 dark:hover:text-white hover:text-gray-400">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <i class="fa-brands fa-instagram"></i>
+                  </svg>
+              </a>
+              <a href="#" class="text-gray-900 dark:hover:text-white hover:text-gray-400">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </svg>
+              </a>
+        </div>
+      </div>
+    </div>
+</footer>
+<!--"Footer" end-->
+
+
+
+
+
+
+</body>
+<script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+</html>
