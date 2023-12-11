@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="image/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css">
   <head>
   <body>
 
@@ -109,8 +110,18 @@
       <h1 class="sm:text-[56px] text-[24px] sm:font-[800] font-[700] text-center title-font text-[#C026D3] mb-4">Stories fro<span class="text-[#701A75]">m our users</span></h1>
       <p class="text-base sm:text-[20px] text-[16px] leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600">Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum sollicitudin.</p>
   </div>
-  <div class="flex flex-wrap -m-4">
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full nav1 bg-white">
+  </div>
+</section>
+<!--"Stories from our users" end-->
+
+
+
+<div class="container max-w-screen-xl mx-auto">
+      <div class="splide">
+        <div class="splide__track">
+          <div class="splide__list">
+            <div class="w-full p-4 shadow splide__slide">
+              <div class="space-y-2 ">
         <a class="block relative h-48 rounded overflow-hidden">
           <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="images/img2.jpg">
         </a>
@@ -121,11 +132,13 @@
         <div>Flower Decorations</div>
         <div class="text-sm text-gray-500 dark:text-gray-400">by Melvina Spring</div>
     </div>
-</div>
+  </div>
         </div>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full nav1 bg-white">
-        <a class="block relative h-48 rounded overflow-hidden">
+              </div>
+            </div>
+            <div class="w-full p-4 shadow splide__slide">
+              <div class="space-y-2">
+                <a class="block relative h-48 rounded overflow-hidden">
           <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="images/img3.jpg">
         </a>
         <div class="mt-4">
@@ -135,11 +148,13 @@
         <div>Flower Decorations</div>
         <div class="text-sm text-gray-500 dark:text-gray-400">by Melvina Spring</div>
     </div>
-</div>
+  </div>
         </div>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full nav1 bg-white">
-        <a class="block relative h-48 rounded overflow-hidden">
+              </div>
+            </div>
+            <div class="w-full p-4 shadow splide__slide">
+              <div class="space-y-2">
+                <a class="block relative h-48 rounded overflow-hidden">
           <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="images/img4.jpg">
         </a>
         <div class="mt-4">
@@ -149,11 +164,13 @@
         <div>Splash</div>
         <div class="text-sm text-gray-500 dark:text-gray-400">by Rwanda Melflor</div>
     </div>
-</div>
+  </div>
         </div>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full nav1 bg-white">
-        <a class="block relative h-48 rounded overflow-hidden">
+              </div>
+            </div>
+            <div class="w-full p-4 shadow splide__slide">
+              <div class="space-y-2">
+                <a class="block relative h-48 rounded overflow-hidden">
           <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="images/img5.jpg">
         </a>
         <div class="mt-4">
@@ -163,32 +180,60 @@
         <div>Colorful Face</div>
         <div class="text-sm text-gray-500 dark:text-gray-400">by Melvina Spring</div>
     </div>
-</div>
+  </div>
         </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
-    </div>
-</section>
-<!--"Stories from our users" end-->
+</div>
 
 
 
 
-
-
-<!--"What other users say" start-->
 <section class="bg-[#FDF4FF] mt-16 text-gray-600 body-font">
-  <div class="container px-5 py-24 max-w-screen-xl mx-auto bg-center bg-no-repeat rounded-md" style="background-image: url('images/img03.jpg')">
+  <div class="container px-5 py-24 max-w-screen-xl mx-auto bg-center bg-no-repeat rounded-md" style="background-image: url('images/img02.jpg')">
      <h1 class="sm:text-[56px] text-[24px] sm:font-[800] font-[700] text-center title-font text-[#C026D3] mb-16">What other us<span class="text-[#701A75]">ers say</span></h1>
-    <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center rounded bg-white">
+  <div class="splide" id="combinedSlider">
+    <div class="splide__track">
+      <div class="splide__list">
+        <!-- Slide 1 -->
+        <div class="splide__slide">
+          <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center rounded bg-white">
       <h1 class="inline-block text-black sm:text-[32px] text-[24px] font-[700] mt-12 mb-8">Placerat feugiat senectus</h1>
       <p class="leading-relaxed sm:text-[20px] text-[16px] text-lg mb-8 text-black">Ultricies pharetra arcu turpis dui massa interdum lorem. Viverra nunc quisque congue tincidunt potenti. Tellus, enim vel habitasse commodo ultrices aenean ultricies.</p>
       <img class="w-50 h-50 rounded-full mb-4 inline-block" src="images/img6.jpg" alt="">
       <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Jane Doe</h2>
       <p class="text-gray-500 mb-8">Senior Designer</p>
     </div>
+          <div class="card">
+            <!-- ... -->
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="splide__slide">
+          <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center rounded bg-white">
+      <h1 class="inline-block text-black sm:text-[32px] text-[24px] font-[700] mt-12 mb-8">Placerat feugiat senectus</h1>
+      <p class="leading-relaxed sm:text-[20px] text-[16px] text-lg mb-8 text-black">Ultricies pharetra arcu turpis dui massa interdum lorem. Viverra nunc quisque congue tincidunt potenti. Tellus, enim vel habitasse commodo ultrices aenean ultricies.</p>
+      <img class="w-50 h-50 rounded-full mb-4 inline-block" src="images/img6.jpg" alt="">
+      <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Jane Doe</h2>
+      <p class="text-gray-500 mb-8">Senior Designer</p>
+    </div>
+          <div class="card">
+            <!-- ... -->
+          </div>
+        </div>
+
+        <!-- Repeat for additional cards as needed -->
+      </div>
+    </div>
   </div>
+</div>
 </section>
-<!--"What other users say" start-->
 
 
 
@@ -306,7 +351,7 @@
           <span class="text-black">Enim sodales consequat adipiscing facilisis massa venenatis, non lorem lobortis?</span>
           <span class="transition group-open:rotate-180">
                 <svg class="text-[#C026D3]" fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-</svg>
+ </svg>
               </span>
         </summary>
         <p class="sm:text-xl text-sm text-black mt-6 text-black group-open:animate-fadeIn">
@@ -320,7 +365,7 @@
           <span class="text-black">Venenatis nulla sagittis nunc, lobortis nec sollicitudin neque, dolor?</span>
           <span class="transition group-open:rotate-180">
                 <svg class="text-[#C026D3]" fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-</svg>
+ </svg>
               </span>
         </summary>
         <p class="sm:text-xl text-sm text-black mt-6 text-black group-open:animate-fadeIn">
@@ -334,7 +379,7 @@
           <span class="text-black">Varius ultricies molestie tellus fermentum, viverra ipsum scelerisque etiam lorem?</span>
           <span class="transition group-open:rotate-180">
                 <svg class="text-[#C026D3]" fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-</svg>
+ </svg>
               </span>
         </summary>
         <p class="sm:text-xl text-sm text-black mt-6 text-black group-open:animate-fadeIn">
@@ -348,7 +393,7 @@
           <span class="text-black">Nulla etiam vitae, at sagittis, nibh ultrices mattis feugiat faucibus?</span>
           <span class="transition group-open:rotate-180">
                 <svg class="text-[#C026D3]" fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-</svg>
+ </svg>
               </span>
         </summary>
         <p class="sm:text-xl text-sm text-black mt-6 text-black group-open:animate-fadeIn">
@@ -362,7 +407,7 @@
           <span class="text-black">Sagittis consectetur gravida nec turpis eros, id sit et, dictum?</span>
           <span class="transition group-open:rotate-180">
                 <svg class="text-[#C026D3]" fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-</svg>
+ </svg>
               </span>
         </summary>
         <p class="sm:text-xl text-sm text-black mt-6 text-black group-open:animate-fadeIn">
@@ -371,8 +416,8 @@
       </details>
     </div>
   </div>
-</div>
-</div>
+ </div>
+ </div>
 </section>
 <!--"Frequently asked questions" end-->
 
@@ -572,4 +617,37 @@
 </body>
 <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/js/splide.min.js"></script>
+<script>
+  var splide = new Splide('.splide', {
+    type: 'loop',
+    perPage: 4,
+    breakpoints: {
+      600: {
+        perPage: 1, // Show only 1 slide on screens of width 600 pixels and below (i.e., mobile screens)
+      },
+      770: {
+        perPage: 2, // Show 2 slides on iPad screens (adjust as needed)
+      }
+    },
+    rewind: true,
+  });
+
+  splide.mount();
+</script>
+
+<script>
+  var combinedSlider = new Splide('#combinedSlider', {
+    type: 'loop',
+    perPage: 1, // Show 1 card at a time on mobile screens
+    breakpoints: {
+      768: {
+        perPage: 1, // Show 2 cards at a time on desktop screens
+      }
+    },
+    rewind: true,
+  });
+
+  combinedSlider.mount();
+</script>
 </html>
